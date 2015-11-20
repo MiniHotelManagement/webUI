@@ -66,14 +66,14 @@
             </div>
                 <label for="roomType" class="col-md-1">Room Type</label>
 
-                <div class="checkbox col-md-2">
+                <div class=" col-md-2">
                     <label for="smoking">
-                        <input type="checkbox" id="smoking" class="roomType readable" disabled> Smoking
+                        <input type="radio" name="roomType" id="smoking" class="roomType readable" disabled> Smoking
                     </label>
                 </div>
-                <div class="checkbox col-md-3">
+                <div class=" col-md-3">
                     <label for="nonSmoking">
-                        <input type="checkbox" id="nonSmoking" class="roomType readable" disabled>Non-Smoking
+                        <input type="radio" name="roomType" id="nonSmoking" class="roomType readable" disabled>Non-Smoking
                     </label>
                 </div>
         </div>
@@ -81,6 +81,7 @@
             <label for="discount" class="col-md-3">Discount</label>
             <div class="col-md-3">
             <select class="form-control readable" id="discount" disabled>
+                <option selected>0%</option>
                 <option>10%</option>
                 <option>20%</option>
                 <option>30%</option>
