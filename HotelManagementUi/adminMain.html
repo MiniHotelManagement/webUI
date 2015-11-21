@@ -46,36 +46,38 @@
     $("#mainContainer").load("checkInGuestAdmin.html");
 
     $("#checkInGuest").click(function(){
+        $("ul li").removeClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("checkInGuestAdmin.html");
     });
 
     $("#checkOutGuest").click(function(){
         $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("checkOutGuest.html");
     });
 
     $("#changeReservation").click(function(){
         $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("changeReservation.html");
     });
 
     $("#reserveForGuest").click(function(){
         $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("reserveForGuest.html");
     });
 
     $("#reports").click(function(){
         $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("reports.html");
     });
 
     $("#roomProv").click(function(){
         $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("roomProvisioning.html");
     });
 

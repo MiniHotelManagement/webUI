@@ -45,30 +45,32 @@
     $("#mainContainer").load("checkInGuest.html");
 
     $("#checkInGuest").click(function(){
+        $("ul li").removeClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("checkInGuest.html");
     });
 
     $("#checkOutGuest").click(function(){
         $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
        $("#mainContainer").load("checkOutGuest.html");
     });
 
     $("#changeReservation").click(function(){
         $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("changeReservation.html");
     });
 
     $("#reserveForGuest").click(function(){
         $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("reserveForGuest.html");
     });
 
     $("#reports").click(function(){
        $("ul li").removeClass("active");
-        $(this).addClass("active");
+        $(this).parent().addClass("active");
         $("#mainContainer").load("reports.html");
     });
 
