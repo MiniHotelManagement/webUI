@@ -105,5 +105,17 @@
 
     });
 
+    /*for service agent login*/
+    $("#loginAd").click(function(){
+        /*hardcoding username and password just for the testing purpose*/
+        var username=$("#usernameAd").val();
+        var password=$("#passwordAd").val();
+        console.log(username+" "+password);
+        if(username === "rajat" && password=="rajat"){
+            location.href="adminMain.html";
+        }
+
+    });
+
 </script>
 </html>

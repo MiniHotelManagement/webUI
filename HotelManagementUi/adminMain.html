@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>service agent main</title>
+    <title>admin main</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -26,6 +26,7 @@
                 <li><a href="#" id="checkOutGuest">Check Out Guest</a> </li>
                 <li><a href="#" id="reserveForGuest">Reserve For Guest</a> </li>
                 <li><a href="#" id="reports">View Reports</a> </li>
+                <li><a href="#" id="roomProv">Room Provisioning</a> </li>
             </ul>
 
         </div>
@@ -42,16 +43,16 @@
 <script>
 
     /*will load first by default*/
-    $("#mainContainer").load("checkInGuest.html");
+    $("#mainContainer").load("checkInGuestAdmin.html");
 
     $("#checkInGuest").click(function(){
-        $("#mainContainer").load("checkInGuest.html");
+        $("#mainContainer").load("checkInGuestAdmin.html");
     });
 
     $("#checkOutGuest").click(function(){
         $("ul li").removeClass("active");
         $(this).addClass("active");
-       $("#mainContainer").load("checkOutGuest.html");
+        $("#mainContainer").load("checkOutGuest.html");
     });
 
     $("#changeReservation").click(function(){
@@ -67,9 +68,15 @@
     });
 
     $("#reports").click(function(){
-       $("ul li").removeClass("active");
+        $("ul li").removeClass("active");
         $(this).addClass("active");
         $("#mainContainer").load("reports.html");
+    });
+
+    $("#roomProv").click(function(){
+        $("ul li").removeClass("active");
+        $(this).addClass("active");
+        $("#mainContainer").load("roomProvisioning.html");
     });
 
 
