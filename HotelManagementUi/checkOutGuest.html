@@ -12,29 +12,29 @@
     <div class="jumbotron checkOutGuest">
 
         <h3 class="h3Heading">Request for following information from guest</h3>
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="checkoutInfoReqForm">
             <div class="form-group">
                 <label for="guestFullName" class="col-md-4">Guest Full Name</label>
                 <div class="col-md-8">
-                    <input type="text" class="form-control" id="guestFullName"  name="guestFullName">
+                    <input type="text" class="form-control" id="guestFullName"  name="guestFullName" required>
                 </div>
             </div>
             <div class="form-group">
                 <label for="email" class="col-md-4">Email</label>
                 <div class="col-md-8">
-                    <input type="email" class="form-control" id="email"  name="email">
+                    <input type="email" class="form-control" id="email"  name="email" required>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-md-2">
-                    <button type="button" class="btn btn-success" id="findGuestInfo">Find Guest Info</button>
+                    <button type="submit" class="btn btn-success" id="findGuestInfo">Find Guest Info</button>
                 </div>
             </div>
         </form>
 
         <div class="clear clearWithBorder"></div>
         <h3 class="h3Heading">Information Found</h3>
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="infoFoundForm">
         <div class="form-group">
             <label for="guestName" class="col-md-3">Guest Name</label>
             <div class="col-md-3">
@@ -67,7 +67,7 @@
             </div>
             <div class="form-group">
                 <div class="col-md-2">
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#checkOutModal" id="guestCheckoutButton">CheckOut Guest</button>
+                    <button type="submit" class="btn btn-success" data-toggle="modal" data-target="#checkOutModal" id="guestCheckoutButton">CheckOut Guest</button>
                 </div>
             </div>
         </form>
@@ -91,6 +91,28 @@
 </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-formhelpers.min.js"></script>
+<script>
+    $("#checkoutInfoReqForm").validate({
+        rules: {
+            guestFullName:{
+                lettersonly:true
+            }
+        }
+    });
+
+    $.validator.addMethod( "lettersonly", function( value, element ) {
+        return this.optional( element ) || /^[a-zA-Z\s]*$/i.test( value );
+    }, "Letters only please" );
+
+    $("#checkoutInfoReqForm").submit(function(e){
+        e.preventDefault();
+    });
+
+    $("#infoFoundForm").submit(function(e){
+        e.preventDefault();
+    });
+</script>
 </html>

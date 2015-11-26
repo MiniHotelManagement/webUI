@@ -22,81 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="checkInGuestAdmin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HotelManagementUi/checkInGuestAdmin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0545454">
-              <caret line="110" column="18" selection-start-line="106" selection-start-column="12" selection-end-line="110" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roomProvisioning.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HotelManagementUi/roomProvisioning.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.461538">
-              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminMain.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HotelManagementUi/adminMain.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14629948">
-              <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkInGuest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HotelManagementUi/checkInGuest.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.509091">
-              <caret line="77" column="22" selection-start-line="66" selection-start-column="16" selection-end-line="77" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HotelManagementUi/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reserveForGuest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HotelManagementUi/reserveForGuest.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846">
-              <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serviceAgentMain.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HotelManagementUi/serviceAgentMain.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.038462">
-              <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="guest.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="guest.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HotelManagementUi/guest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.509091">
-              <caret line="116" column="81" selection-start-line="116" selection-start-column="81" selection-end-line="116" selection-end-column="81" />
+            <state vertical-scroll-proportion="0.20998278">
+              <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -122,17 +52,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HotelManagementUi/guest.html" />
-        <option value="$PROJECT_DIR$/HotelManagementUi/reserveForGuest.html" />
         <option value="$PROJECT_DIR$/adminMain.html" />
         <option value="$PROJECT_DIR$/HotelManagementUi/index.html" />
         <option value="$PROJECT_DIR$/HotelManagementUi/js/checkInGuestAdmin.html" />
-        <option value="$PROJECT_DIR$/HotelManagementUi/checkInGuestAdmin.html" />
         <option value="$PROJECT_DIR$/HotelManagementUi/css/styles.css" />
-        <option value="$PROJECT_DIR$/HotelManagementUi/checkInGuest.html" />
-        <option value="$PROJECT_DIR$/HotelManagementUi/roomProvisioning.html" />
         <option value="$PROJECT_DIR$/HotelManagementUi/serviceAgentMain.html" />
         <option value="$PROJECT_DIR$/HotelManagementUi/adminMain.html" />
+        <option value="$PROJECT_DIR$/HotelManagementUi/checkOutGuest.html" />
+        <option value="$PROJECT_DIR$/HotelManagementUi/reserveForGuest.html" />
+        <option value="$PROJECT_DIR$/HotelManagementUi/checkInGuest.html" />
+        <option value="$PROJECT_DIR$/HotelManagementUi/checkInGuestAdmin.html" />
+        <option value="$PROJECT_DIR$/HotelManagementUi/roomProvisioning.html" />
+        <option value="$PROJECT_DIR$/HotelManagementUi/guest.html" />
       </list>
     </option>
   </component>
@@ -509,22 +440,25 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ed1c0f67-12ed-4546-ac54-582a27ca73e9" name="Default" comment="" />
       <created>1448056227900</created>
       <option name="number" value="Default" />
       <updated>1448056227900</updated>
-      <workItem from="1448056229630" duration="10531000" />
+      <workItem from="1448056229630" duration="68371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10531000" />
+    <option name="totallyTimeSpent" value="68371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -536,7 +470,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -576,6 +510,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -584,22 +526,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HotelManagementUi/guest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.509091">
-          <caret line="116" column="81" selection-start-line="116" selection-start-column="81" selection-end-line="116" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HotelManagementUi/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.5">
-          <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HotelManagementUi/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -608,50 +534,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HotelManagementUi/checkInGuestAdmin.html">
+    <entry file="file://$PROJECT_DIR$/HotelManagementUi/serviceAgentMain.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0545454">
-          <caret line="110" column="18" selection-start-line="106" selection-start-column="12" selection-end-line="110" selection-end-column="18" />
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HotelManagementUi/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-70.07692">
+          <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HotelManagementUi/roomProvisioning.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.461538">
-          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HotelManagementUi/checkInGuest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.509091">
-          <caret line="77" column="22" selection-start-line="66" selection-start-column="16" selection-end-line="77" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.029259896">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HotelManagementUi/reserveForGuest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846">
-          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.9862306">
+          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HotelManagementUi/serviceAgentMain.html">
+    <entry file="file://$PROJECT_DIR$/HotelManagementUi/checkOutGuest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.038462">
-          <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.19621342">
+          <caret line="94" column="43" selection-start-line="92" selection-start-column="0" selection-end-line="94" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HotelManagementUi/checkInGuestAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4456522">
+          <caret line="154" column="34" selection-start-line="154" selection-start-column="34" selection-end-line="154" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HotelManagementUi/adminMain.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14629948">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.8244406">
+          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HotelManagementUi/checkInGuest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23007247">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HotelManagementUi/guest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20998278">
+          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
           <folding />
         </state>
       </provider>

@@ -13,17 +13,17 @@
 
     <div class="jumbotron checkInGuestAdmin">
         <h3 class="h3Heading">Add Room </h3>
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="addRoomForm">
         <div class="form-group">
             <label for="roomNum" class="col-md-2">Room Number</label>
             <div class="col-md-6">
-                <input type="number" min="100" class="form-control" id="roomNum" name="roomNum">
+                <input type="number" min="100" class="form-control" id="roomNum" name="roomNum" required>
             </div>
         </div>
             <div class="form-group">
                 <label for="roomType" class="col-md-2">Room Type</label>
                 <div class="col-md-6">
-                    <select class="form-control" id="roomType">
+                    <select class="form-control" id="roomType" required>
                         <option selected>Two Queen Beds</option>
                         <option>One King Bed</option>
                     </select>
@@ -33,7 +33,7 @@
                 <label for="roomOptions" class="col-md-2">Room Options</label>
                 <div class=" col-md-2">
                     <label for="smoking">
-                        <input type="radio" name="roomOptions" id="smoking" class="roomOptions readable"> Smoking
+                        <input type="radio" name="roomOptions" id="smoking" class="roomOptions readable" required> Smoking
                     </label>
                 </div>
                 <div class=" col-md-2">
@@ -44,26 +44,43 @@
             </div>
             <div class="form-group">
                 <div class="col-md-2">
-                    <button type="button" class="btn btn-success" id="addRoomButton">Add Room</button>
+                    <button type="submit" class="btn btn-success" id="addRoomButton">Add Room</button>
                 </div>
             </div>
         </form>
         <div class="clear clearWithBorder"></div>
         <h3 class="h3Heading">Delete Room</h3>
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="deleteRoomForm">
             <div class="form-group">
                 <label for="deleteRoom" class="col-md-2">Room Number</label>
                 <div class="col-md-6">
-                    <input type="number" min="100" class="form-control" id="deleteRoom" name="roomNum">
+                    <input type="number" min="100" class="form-control" id="deleteRoom" name="roomNum" required>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-md-2">
-                    <button type="button" class="btn btn-success" id="deleteRoomButton">Delete Room</button>
+                    <button type="submit" class="btn btn-success" id="deleteRoomButton">Delete Room</button>
                 </div>
             </div>
             </form>
     </div>
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$("#addRoomForm").validate();
+
+$("#addRoomForm").submit(function(e){
+        e.preventDefault();
+});
+
+$("#deleteRoomForm").validate();
+    $("#deleteRoomForm").submit(function(e){
+        e.preventDefault();
+    });
+
+
+</script>
 </html>

@@ -9,25 +9,24 @@
 </head>
 <body>
 <div class="container">
-
     <div class="jumbotron checkInGuest">
     <h3 class="h3Heading">Request for following information from guest</h3>
-    <form class="form-horizontal">
+    <form class="form-horizontal" id="checkInForm">
         <div class="form-group">
             <label for="reservationId" class="col-md-4">Reservation Id</label>
             <div class="col-md-8">
-            <input type="text" class="form-control" id="reservationId" name="reservationId">
+            <input type="text" class="form-control" id="reservationId" name="reservationId" required>
             </div>
         </div>
         <div class="form-group">
             <label for="dlNum" class="col-md-4">Driver License #</label>
             <div class="col-md-8">
-                <input type="number" class="form-control" id="dlNum" min="0" name="dlNum">
+                <input type="number" class="form-control" id="dlNum" min="0" name="dlNum" required>
             </div>
         </div>
         <div class="form-group">
             <div class="col-md-2">
-            <button type="button" class="btn btn-success" id="findResButton">Find Reservation</button>
+            <button type="submit" class="btn btn-success" id="findResButton">Find Reservation</button>
             </div>
         </div>
     </form>
@@ -35,12 +34,12 @@
         <!-- Form when info is found. Initially all fields are disabled-->
     <div class="clear clearWithBorder"></div>
     <h3 class="h3Heading">Information Found</h3>
-    <form class="form-horizontal">
+    <form class="form-horizontal" id="infoFoundForm">
 
         <div class="form-group">
             <label for="resId" class="col-md-3">Reservation Id</label>
             <div class="col-md-3">
-                <input type="text" class="form-control" id="resId" name="resId" disabled>
+                <input type="text" class="form-control" id="resId" name="resId" disabled >
             </div>
             <label for="dlNumReadOnly" class="col-md-3">Driver License #</label>
             <div class="col-md-3">
@@ -62,25 +61,25 @@
         <div class="form-group">
             <label for="numRooms" class="col-md-3">Rooms Booked</label>
             <div class="col-md-3">
-                <input type="number" class="form-control readable" id="numRooms"  name="numRooms" disabled>
+                <input type="number" class="form-control" id="numRooms"  name="numRooms" required>
             </div>
                 <label for="roomType" class="col-md-1">Room Type</label>
 
                 <div class=" col-md-2">
                     <label for="smoking">
-                        <input type="radio" name="roomType" id="smoking" class="roomType readable" disabled> Smoking
+                        <input type="radio" name="roomType" id="smoking" class="roomType" required> Smoking
                     </label>
                 </div>
                 <div class=" col-md-3">
                     <label for="nonSmoking">
-                        <input type="radio" name="roomType" id="nonSmoking" class="roomType readable" disabled>Non-Smoking
+                        <input type="radio" name="roomType" id="nonSmoking" class="roomType">Non-Smoking
                     </label>
                 </div>
         </div>
         <div class="form-group">
             <label for="discount" class="col-md-3">Discount</label>
             <div class="col-md-3">
-            <select class="form-control readable" id="discount" disabled>
+            <select class="form-control" id="discount" required>
                 <option selected>0%</option>
                 <option>10%</option>
                 <option>20%</option>
@@ -89,27 +88,27 @@
                 </div>
             <label for="checkInDate" class="col-md-3">CheckIn Date</label>
             <div class="col-md-3">
-                <input type="date" class="form-control readable" id="checkInDate"  name="checkInDate" disabled>
+                <input type="date" class="form-control" id="checkInDate"  name="checkInDate" required>
             </div>
         </div>
 
         <div class="form-group">
             <label for="checkOutDate" class="col-md-3">CheckOut Date</label>
             <div class="col-md-9">
-                <input type="date" class="form-control readable" id="checkOutDate"  name="checkInDate" disabled>
+                <input type="date" class="form-control" id="checkOutDate"  name="checkOutDate" required>
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-2">
-                <button type="button" class="btn btn-success" id="roomOrdButton">Confirm Room Order</button>
+                <button type="submit" class="btn btn-success" id="roomOrdButton">Confirm Room Order</button>
             </div>
         </div>
     </form>
 
         <div class="clear clearWithBorder"></div>
         <h3 class="h3Heading">Final Room Order</h3>
-        <form class="form-horizontal">
+        <form class="form-horizontal" id="finalOrderForm">
             <div class="form-group">
                 <label for="perInEachRoom" class="col-md-12">Number of people in each room</label>
                 <div class="col-md-8 " id="perInEachRoom">
@@ -117,38 +116,60 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-success" id="checkInButton">Check In</button>
+                        <button type="submit" class="btn btn-success" id="checkInButton">Check In</button>
                     </div>
                 </div>
 
             </div>
         </form>
-
-
     </div>
 </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
-    $("#findResButton").click(function(){
-        $(".readable").prop("disabled",false);
+
+
+    $("#checkInForm").validate();
+
+    $("#checkInForm").submit(function(e){
+        e.preventDefault();
+    });
+
+    $("#infoFoundForm").validate();
+    $("#infoFoundForm").submit(function(e){
+        e.preventDefault();
+    });
+
+    $("#findResButton").click(function(e){
+
+
+    });
+
+    $("#finalOrderForm").validate();
+    $("#finalOrderForm").submit(function(e){
+        e.preventDefault();
+
     });
 
     $("#roomOrdButton").click(function(){
         var numberOfRooms=$("#numRooms").val();
         var counter=0;
         var container=$('<div/>');
-        $(".readable").prop("disabled",true);
+
         for(counter=1;counter<=numberOfRooms;counter++){
-           container.append('<label for="room">Room '+counter+'</label><input type="number" class="form-control readable"  name="checkInDate" />');
+           container.append('<label for="room">Room '+counter+'</label><input type="number" class="form-control"  name="checkInDate" required />');
         }
+
         $("#perInEachRoom").html(container);
     });
 
-    $("#checkInButton").click(function(){
-        $("#perInEachRoom").html("");
+    $("#checkInButton").click(function(e){
+
+        $("#perInEachRoom").html("guest checked in").show().fadeOut(3000);
     });
+
 
 </script>
 </html>
