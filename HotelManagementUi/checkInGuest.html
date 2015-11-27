@@ -67,12 +67,12 @@
 
                 <div class=" col-md-2">
                     <label for="smoking">
-                        <input type="radio" name="roomType" id="smoking" class="roomType" required> Smoking
+                        <input type="radio" name="roomType" id="smoking" value="smoking" class="roomType" required> Smoking
                     </label>
                 </div>
                 <div class=" col-md-3">
                     <label for="nonSmoking">
-                        <input type="radio" name="roomType" id="nonSmoking" class="roomType">Non-Smoking
+                        <input type="radio" name="roomType" id="nonSmoking" value="non-smoking" class="roomType">Non-Smoking
                     </label>
                 </div>
         </div>
@@ -135,11 +135,41 @@
 
     $("#checkInForm").submit(function(e){
         e.preventDefault();
+
+        $.ajax({
+            type:'post',
+            url: '',
+            dataType:'json',
+            data:{
+            reservationId: $("#reservationId").val(),
+            dlNum:$("#dlNum").val()
+            },
+            success: function(dataRecieved){
+                /*recieved */
+                var dataRecieved=$_trim(dataRecieved);
+            }
+        });
     });
 
     $("#infoFoundForm").validate();
     $("#infoFoundForm").submit(function(e){
         e.preventDefault();
+
+        $.ajax({
+            type:'post',
+            dataType:'json',
+            url:'',
+            data:{
+                numberOfRooms:$("#numRooms").val(),
+                roomType:$("input[name=roomType]:checked").val(),
+                discount:$("#discount option:selected").val(),
+                checkInDate:$("#checkInDate").val(),
+                checkOutDate:$("#checkOutDate").val(),
+            },
+            success:function(dataRecieved){
+                var dataRecieved=$_trim(dataRecieved);
+            }
+        });
     });
 
     $("#findResButton").click(function(e){

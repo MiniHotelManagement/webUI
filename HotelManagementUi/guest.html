@@ -46,19 +46,19 @@
 
                     <div class=" col-sm-offset-5">
                         <label for="smoking">
-                            <input type="radio" id="smoking" name="roomType" required> Smoking
+                            <input type="radio" id="smoking" name="roomType" value="smoking" required> Smoking
                         </label>
                     </div>
                     <div class=" col-sm-offset-5">
                         <label for="nonSmoking">
-                            <input type="radio" id="nonSmoking" name="roomType">Non-Smoking
+                            <input type="radio" id="nonSmoking" value="non-smoking" name="roomType">Non-Smoking
                         </label>
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-4 col-sm-8">
-                    <button type="submit" class="btn btn-warning">Check Availability</button>
+                    <button type="submit" class="btn btn-success">Check Availability</button>
                 </div>
             </div>
         </form>
@@ -109,12 +109,12 @@
 
                     <div class="col-sm-offset-5">
                         <label for="smoking">
-                            <input type="radio" id="ressmoking" name="roomType" required> Smoking
+                            <input type="radio" id="ressmoking" name="roomType" value="smoking" required> Smoking
                         </label>
                     </div>
                     <div class="col-sm-offset-5">
                         <label for="nonSmoking">
-                            <input type="radio" id="resnonSmoking" name="roomType">Non-Smoking
+                            <input type="radio" id="resnonSmoking" name="roomType" value="non-smoking">Non-Smoking
                         </label>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
 
             <div class="form-group">
                 <div class="col-sm-offset-4 col-sm-8">
-                    <button type="submit" class="btn btn-warning">Reserve</button>
+                    <button type="submit" class="btn btn-success">Reserve</button>
                 </div>
             </div>
 
@@ -172,12 +172,51 @@
 
     $("#checkAvailabilityForm").submit(function(e){
         e.preventDefault();
+
+        $.ajax({
+            type: 'post',
+            url: '',
+            dataType: 'json',
+            data: {
+                checkInDate: $("#checkInDate").val(),
+                checkOutDate: $("#checkOutDate").val(),
+                roomsWanted:$("#roomsWanted").val(),
+                roomType: $("input[name=roomType]:checked").val()
+            },
+            success: function(dataRecieved){
+                var dataRecieved=$_trim(dataRecieved);
+            }
+
+        });
     });
 
     $("#reserveForm").validate();
 
     $("#reserveForm").submit(function(e){
         e.preventDefault();
+
+        $.ajax({
+           type:'post',
+            url:'',
+            dataType:'json',
+            data: {
+                email: $("#email").val(),
+                fullName: $("#fullName").val(),
+                dlNum:$("#dlNum").val(),
+                checkInDate:$("#rescheckInDate").val(),
+                checkOutDate:$("#rescheckOutDate").val(),
+                roomsWanted:$("#resroomsWanted").val(),
+                roomType: $("input[name=roomType]:checked").val(),
+                street: $("#street").val(),
+                city:$("#city").val(),
+                state: $("#state option:selected").text(),
+                zip:$("#zip").val()
+            },
+            success: function(dataRecieved){
+                var dataRecieved=$_trim(dataRecieved);
+            }
+        });
     });
+
 </script>
 </html>
