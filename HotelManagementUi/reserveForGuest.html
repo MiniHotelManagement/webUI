@@ -105,5 +105,31 @@
 
 <script>
     $("#checkAvailabilityForm").validate();
+
+    $("#checkAvailabilityForm").submit(function(e){
+        e.preventDefault();
+
+        $.ajax({
+            type:'post',
+            url:'',
+            dataType:'json',
+            data: {
+                email: $("#email").val(),
+                fullName: $("#fullName").val(),
+                dlNum:$("#dlNum").val(),
+                checkInDate:$("#rescheckInDate").val(),
+                checkOutDate:$("#rescheckOutDate").val(),
+                roomsWanted:$("#resroomsWanted").val(),
+                roomType: $("input[name=roomType]:checked").val(),
+                street: $("#street").val(),
+                city:$("#city").val(),
+                state: $("#state option:selected").text(),
+                zip:$("#zip").val()
+            },
+            success: function(dataRecieved){
+                var dataRecieved=$_trim(dataRecieved);
+            }
+        });
+    });
 </script>
 </html>
