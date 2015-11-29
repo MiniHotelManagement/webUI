@@ -143,13 +143,14 @@
             type:'post',
             url: '',
             dataType:'json',
-            data:{
+            data:JSON.stringify({
                 reservationId: $("#reservationId").val(),
                 dlNum:$("#dlNum").val()
-            },
+            }),
+            contentType:'application/json',
             success: function(dataRecieved){
                 /*recieved */
-                var dataRecieved=$_trim(dataRecieved);
+                var dataRecieved= $.trim(dataRecieved);
             }
         });
     });
@@ -166,15 +167,16 @@
             type:'post',
             dataType:'json',
             url:'',
-            data:{
+            data:JSON.stringify({
                 numberOfRooms:$("#numRooms").val(),
                 roomType:$("input[name=roomType]:checked").val(),
                 discount:$("#discount option:selected").val(),
                 checkInDate:$("#checkInDate").val(),
                 checkOutDate:$("#checkOutDate").val(),
-            },
+            }),
+            contentType: 'application/json',
             success:function(dataRecieved){
-                var dataRecieved=$_trim(dataRecieved);
+                var dataRecieved= $.trim(dataRecieved);
             }
         });
     });

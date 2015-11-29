@@ -113,7 +113,7 @@
             type:'post',
             url:'',
             dataType:'json',
-            data: {
+            data: JSON.stringify({
                 email: $("#email").val(),
                 fullName: $("#fullName").val(),
                 dlNum:$("#dlNum").val(),
@@ -125,9 +125,10 @@
                 city:$("#city").val(),
                 state: $("#state option:selected").text(),
                 zip:$("#zip").val()
-            },
+            }),
+            contentType: 'application/json',
             success: function(dataRecieved){
-                var dataRecieved=$_trim(dataRecieved);
+                var dataRecieved= $.trim(dataRecieved);
             }
         });
     });

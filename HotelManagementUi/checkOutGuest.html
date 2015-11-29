@@ -113,14 +113,15 @@
         $.ajax({
             type: 'post',
             dataType: 'json',
-            data: {
+            data: JSON.stringify({
                 guestName: $("#guestFullName").val(),
                 email: $("#email").val()
-            },
+            }),
+            contentType: 'application/json',
             url: '',
 
             success: function (dataRecieved) {
-                var dataRecieved = dataRecieved;
+                var dataRecieved = $.trim(dataRecieved);
             }
         });
     });
@@ -132,17 +133,17 @@
             type:'post',
             url:'',
             dataType:'json',
-            data:{
+            data:JSON.stringify({
                 guestName: $("#guestName").val(),
                 email:$("#emailCheckOut").val(),
                 reservationId:$("#resId").val(),
                 dlNum:$("#dlNum").val(),
                 numRooms:$("#numRooms").val(),
                 discount:$("#discount").val()
-            },
-
+            }),
+            contentType: 'application/json',
             success:function(dataRecieved){
-                var dataRecieved=$_trim(dataRecieved);
+                var dataRecieved= $.trim(dataRecieved);
             }
         });
     });
