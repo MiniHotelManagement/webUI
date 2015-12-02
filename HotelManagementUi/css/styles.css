@@ -14,14 +14,14 @@
         padding-top: 20px;
     }
 
-    .room{
+   /*.room{
         float: left;
         border-radius: 20px;
         width:40%;
         height: 400px;
         margin-top: 40px;
         margin-left: 60px;
-    }
+    }*/
 
     #reserveRoom{
         height: auto;
@@ -34,7 +34,6 @@
         margin:0 auto;
         height:auto;
     }
-
 
 
 
